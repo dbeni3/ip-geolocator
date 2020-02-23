@@ -1,0 +1,126 @@
+[1mdiff --git a/src/main/java/geolocator/GeoLocation.java b/src/main/java/geolocator/GeoLocation.java[m
+[1mindex bb90df1..d0fb08f 100644[m
+[1m--- a/src/main/java/geolocator/GeoLocation.java[m
+[1m+++ b/src/main/java/geolocator/GeoLocation.java[m
+[36m@@ -1,8 +1,8 @@[m
+[31m-package geolocator;[m
+[32m+[m[32mpackage  geolocator;[m
+ import org.apache.commons.lang3.builder.ReflectionToStringBuilder;[m
+ import org.apache.commons.lang3.builder.ToStringStyle;[m
+[31m-[m
+[31m-public class GeoLocation {[m
+[32m+[m[32m@lombok.Data[m
+[32m+[m[32mpublic class  GeoLocation {[m
+ [m
+     private String as;[m
+     private String city;[m
+[36m@@ -18,109 +18,6 @@[m [mpublic class GeoLocation {[m
+     private String timezone;[m
+     private String zip;[m
+ [m
+[31m-    public String getAs() {[m
+[31m-        return as;[m
+[31m-    }[m
+[31m-[m
+[31m-    public void setAs(String as) {[m
+[31m-        this.as = as;[m
+[31m-    }[m
+[31m-[m
+[31m-    public String getCity() {[m
+[31m-        return city;[m
+[31m-    }[m
+[31m-[m
+[31m-    public void setCity(String city) {[m
+[31m-        this.city = city;[m
+[31m-    }[m
+[31m-[m
+[31m-    public String getCountry() {[m
+[31m-        return country;[m
+[31m-    }[m
+[31m-[m
+[31m-    public void setCountry(String country) {[m
+[31m-        this.country = country;[m
+[31m-    }[m
+[31m-[m
+[31m-    public String getCountryCode() {[m
+[31m-        return countryCode;[m
+[31m-    }[m
+[31m-[m
+[31m-    public void setCountryCode(String countryCode) {[m
+[31m-        this.countryCode = countryCode;[m
+[31m-    }[m
+[31m-[m
+[31m-    public String getIsp() {[m
+[31m-        return isp;[m
+[31m-    }[m
+[31m-[m
+[31m-    public void setIsp(String isp) {[m
+[31m-        this.isp = isp;[m
+[31m-    }[m
+[31m-[m
+[31m-    public double getLat() {[m
+[31m-        return lat;[m
+[31m-    }[m
+[31m-[m
+[31m-    public void setLat(double lat) {[m
+[31m-        this.lat = lat;[m
+[31m-    }[m
+[31m-[m
+[31m-    public double getLon() {[m
+[31m-        return lon;[m
+[31m-    }[m
+[31m-[m
+[31m-    public void setLon(double lon) {[m
+[31m-        this.lon = lon;[m
+[31m-    }[m
+[31m-[m
+[31m-    public String getOrg() {[m
+[31m-        return org;[m
+[31m-    }[m
+[31m-[m
+[31m-    public void setOrg(String org) {[m
+[31m-        this.org = org;[m
+[31m-    }[m
+[31m-[m
+[31m-    public String getQuery() {[m
+[31m-        return query;[m
+[31m-    }[m
+[31m-[m
+[31m-    public void setQuery(String query) {[m
+[31m-        this.query = query;[m
+[31m-    }[m
+[31m-[m
+[31m-    public String getRegion() {[m
+[31m-        return region;[m
+[31m-    }[m
+[31m-[m
+[31m-    public void setRegion(String region) {[m
+[31m-        this.region = region;[m
+[31m-    }[m
+[31m-[m
+[31m-    public String getRegionName() {[m
+[31m-        return regionName;[m
+[31m-    }[m
+[31m-[m
+[31m-    public void setRegionName(String regionName) {[m
+[31m-        this.regionName = regionName;[m
+[31m-    }[m
+[31m-[m
+[31m-    public String getTimezone() {[m
+[31m-        return timezone;[m
+[31m-    }[m
+[31m-[m
+[31m-    public void setTimezone(String timezone) {[m
+[31m-        this.timezone = timezone;[m
+[31m-    }[m
+[31m-[m
+[31m-    public String getZip() {[m
+[31m-        return zip;[m
+[31m-    }[m
+ [m
+[31m-    public void setZip(String zip) {[m
+[31m-        this.zip = zip;[m
+[31m-    }[m
+[31m-    public String toString() { return ReflectionToStringBuilder.toString(this, ToStringStyle.MULTI_LINE_STYLE); }[m
+ [m
+ }[m
